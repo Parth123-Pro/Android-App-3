@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AuctionHub</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+
+
+</resources>

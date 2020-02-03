@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/Black"
+    tools:context=".MotocActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            >
+
+            <ImageView
+                android:id="@+id/onthumbnail"
+                android:layout_width="140dp"
+                android:layout_height="221dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="38dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="76dp"
+                android:background="@color/white"
+
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="96dp"
+                android:layout_height="162dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="98dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@color/white" />
+
+            <TextView
+                android:id="@+id/ontitle"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="31dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="18dp"
+                android:text="Auction Title"
+                android:textColor="@color/Green"
+                android:textSize="30dp"
+                app:fontFamily="@font/abril_fatface" />
+
+            <TextView
+                android:id="@+id/onprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="41dp"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="316dp"
+                android:text="Auction Price"
+                android:textColor="@color/white"
+                android:textSize="27dp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ondetail"
+                android:layout_width="320dp"
+                android:layout_height="209dp"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="379dp"
+                android:gravity="left"
+
+                android:text="Auction Details"
+                android:textColor="@color/Gray"
+                android:textSize="22dp"
+                app:fontFamily="@font/yellowtail" />
+
+            <Button
+                android:id="@+id/onbtn"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/ondetail"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/Green"
+                android:drawableRight="@drawable/gravelll"
+                android:drawableTint="@color/Black"
+                android:text="Bid Now" />
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
