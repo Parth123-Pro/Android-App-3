@@ -26,9 +26,10 @@ public class AddproActivity extends AppCompatActivity {
         t1=(TextView)findViewById(R.id.addtv1);
         t1=(TextView)findViewById(R.id.addtv1);
         t1=(TextView)findViewById(R.id.addtv1);
-        t1=(TextView)findViewById(R.id.addtv1);
+
 
 //jai
+
 
     }
 }
