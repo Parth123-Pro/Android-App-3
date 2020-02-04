@@ -13,9 +13,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="81dp"
-        android:layout_marginLeft="81dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="59dp"
         android:gravity="center|left"
 
         android:text="SIGN IN"
