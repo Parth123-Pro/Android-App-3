@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Black"
+    android:background="@drawable/background"
     android:layout_gravity="center"
     tools:context=".Registration.RegistrationActivity">
 
@@ -20,9 +20,9 @@
         android:layout_marginStart="78dp"
         android:layout_marginLeft="78dp"
         android:layout_marginTop="41dp"
-        android:gravity="center|left"
+        android:gravity="center"
         android:text="SIGN UP"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/lightGreen"
         android:textSize="36sp"
         android:textStyle="bold"
         app:fontFamily="@font/allura" />
@@ -35,14 +35,15 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="178dp"
-        android:backgroundTint="@color/white"
         android:drawableLeft="@drawable/userlog"
+        android:padding="10dp"
         android:ems="12"
         android:hint="Name"
         android:inputType="textPersonName"
-        android:textColor="@color/Green"
-        android:textColorHint="@color/Gray"
-        android:textSize="18sp" />
+        android:textColor="@color/Text_color"
+        android:textColorHint="@color/Text_color"
+        android:textSize="18sp"
+        android:background="@drawable/textbox"/>
 
     <EditText
         android:id="@+id/email"
@@ -51,13 +52,15 @@
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="257dp"
-        android:backgroundTint="@color/white"
+        android:padding="10dp"
         android:drawableLeft="@android:drawable/sym_action_email"
         android:ems="12"
+
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:textColor="@color/Green"
-        android:textColorHint="@color/Gray" />
+        android:textColor="@color/Text_color"
+        android:textColorHint="@color/Text_color"
+        android:background="@drawable/textbox"/>
 
     <EditText
         android:id="@+id/passs11"
@@ -66,13 +69,14 @@
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="355dp"
-        android:backgroundTint="@color/white"
         android:drawableLeft="@android:drawable/ic_lock_idle_lock"
         android:ems="12"
         android:hint="Password"
+        android:padding="10dp"
         android:inputType="textPassword"
-        android:textColor="@color/Green"
-        android:textColorHint="@color/Gray" />
+        android:textColor="@color/Text_color"
+        android:textColorHint="@color/Text_color"
+        android:background="@drawable/textbox"/>
 
     <Button
         android:id="@+id/btnreg"
@@ -86,9 +90,9 @@
         android:layout_marginEnd="84dp"
         android:layout_marginRight="84dp"
         android:layout_marginBottom="127dp"
-        android:backgroundTint="@color/Green"
-        android:drawableLeft="@drawable/arrowblackopp"
+        android:textColor="@color/white"
         android:gravity="center"
+        android:background="@drawable/btn"
         android:text="Sign up" />
 
 
@@ -100,16 +104,17 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginLeft="78dp"
-        android:layout_marginBottom="218dp"
-        android:backgroundTint="@color/white"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginBottom="217dp"
+        android:background="@drawable/textbox"
         android:drawableLeft="@android:drawable/ic_lock_idle_lock"
         android:ems="12"
+        android:padding="10dp"
         android:hint="Confrim Password"
         android:inputType="textPassword"
-        android:textColor="@color/Green"
-        android:textColorHint="@color/Gray" />
+        android:textColor="@color/Text_color"
+        android:textColorHint="@color/Text_color" />
 
     <TextView
         android:id="@+id/linklog1"
@@ -119,15 +124,13 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginLeft="78dp"
-        android:layout_marginBottom="59dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginBottom="26dp"
         android:clickable="true"
-        android:drawableLeft="@drawable/arrowbackwhite"
-        android:drawableTint="@color/Gray"
-        android:gravity="center|right"
-        android:text="Signin"
-        android:textColor="@color/Gray"
+        android:gravity="center"
+        android:text="SIGN IN"
+        android:textColor="@color/Text_color"
         android:textSize="18sp" />
 
 </RelativeLayout>
