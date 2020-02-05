@@ -6,27 +6,25 @@
     android:background="@drawable/background">
 
 
-   <TextView
+    <TextView
         android:id="@+id/t1"
-        android:layout_width="247dp"
+        android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="71dp"
-        android:layout_marginLeft="71dp"
-        android:layout_marginTop="59dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="123dp"
+
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="49dp"
         android:gravity="center"
 
         android:text="SIGN IN"
         android:textColor="@color/lightGreen"
-        android:textSize="36sp"
-
-       />
+        android:textSize="36sp" />
 
     <EditText
         android:id="@+id/email"
+        android:drawableTint="@color/lightGreen"
         android:layout_width="wrap_content"
         android:layout_height="74dp"
         android:layout_alignParentTop="true"
@@ -39,7 +37,7 @@
         android:textColorHint="@color/Text_color"
         android:ems="12"
 
-        android:hint="Email"
+        android:hint="   Email"
 
         android:inputType="textEmailAddress"
 
@@ -47,6 +45,8 @@
 
       <EditText
         android:id="@+id/passs"
+          android:drawableTint="@color/lightGreen"
+
         android:layout_width="wrap_content"
         android:layout_height="74dp"
         android:layout_alignParentTop="true"
@@ -56,45 +56,62 @@
         android:drawableLeft="@android:drawable/ic_lock_idle_lock"
         android:textSize="20dp"
         android:ems="12"
-        android:hint="Password"
+        android:hint="   Password"
         android:textColor="@color/Text_color"
           android:textColorHint="@color/Text_color"
         android:inputType="textPassword"
         android:background="@drawable/textbox"  />
 
-   <Button
-        android:id="@+id/btnlog"
-        android:layout_width="250dp"
-        android:layout_height="62dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="200dp"
-        android:backgroundTint="@color/lightGreen"
-        android:background="@drawable/btn"
-        android:text="Sign In"
-        android:textColor="@color/white"
-       android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/linkfp1"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_above="@+id/btnlog"
+        android:layout_below="@+id/passs"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Forgot password ?"
+        android:textColor="@color/Text_color"
+        android:textSize="20dp" />
 
     <!--        android:drawableRight="@drawable/arrowblack"-->
 
-    <TextView
-        android:id="@+id/linkrr1"
-        android:layout_width="241dp"
-        android:layout_height="59dp"
+    <Button
+        android:id="@+id/btnlog"
+        android:layout_width="380dp"
+        android:layout_height="61dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="165dp"
+        android:background="@drawable/btn"
+        android:backgroundTint="@color/lightGreen"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/linkrr1"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="101dp"
-        android:layout_marginLeft="101dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginBottom="30dp"
         android:clickable="true"
         android:drawableTint="@color/Gray"
         android:gravity="center"
         android:text="CREATE ACCOUNT"
         android:textColor="@color/Text_color"
         android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <!--    <TextView-->
     <!--        android:id="@+id/linkfp1"-->
