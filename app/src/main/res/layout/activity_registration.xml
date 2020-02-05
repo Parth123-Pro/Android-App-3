@@ -17,16 +17,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginLeft="78dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="48dp"
         android:gravity="center"
         android:text="SIGN UP"
         android:textColor="@color/lightGreen"
         android:textSize="36sp"
-        android:textStyle="bold"
-        app:fontFamily="@font/allura" />
-
+        />
 
     <EditText
         android:id="@+id/name"
@@ -131,6 +129,7 @@
         android:gravity="center"
         android:text="SIGN IN"
         android:textColor="@color/Text_color"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold"/>
 
 </RelativeLayout>

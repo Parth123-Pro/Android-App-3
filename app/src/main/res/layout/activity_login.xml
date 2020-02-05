@@ -22,8 +22,8 @@
         android:text="SIGN IN"
         android:textColor="@color/lightGreen"
         android:textSize="36sp"
-        android:textStyle="bold"
-        app:fontFamily="@font/allura" />
+
+       />
 
     <EditText
         android:id="@+id/email"
@@ -36,6 +36,7 @@
         android:drawableLeft="@android:drawable/sym_action_email"
         android:textSize="20dp"
         android:textColor="@color/Text_color"
+        android:textColorHint="@color/Text_color"
         android:ems="12"
 
         android:hint="Email"
@@ -57,6 +58,7 @@
         android:ems="12"
         android:hint="Password"
         android:textColor="@color/Text_color"
+          android:textColorHint="@color/Text_color"
         android:inputType="textPassword"
         android:background="@drawable/textbox"  />
 
@@ -91,7 +93,8 @@
         android:gravity="center"
         android:text="CREATE ACCOUNT"
         android:textColor="@color/Text_color"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
     <!--    <TextView-->
     <!--        android:id="@+id/linkfp1"-->
