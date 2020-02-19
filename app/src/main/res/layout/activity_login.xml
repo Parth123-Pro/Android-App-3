@@ -20,7 +20,7 @@
 
         android:text="SIGN IN"
         android:textColor="@color/lightGreen"
-        android:textSize="36sp" />
+        android:textSize="30sp" />
 
     <EditText
         android:id="@+id/email"
