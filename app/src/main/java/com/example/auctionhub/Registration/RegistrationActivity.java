@@ -25,7 +25,7 @@ public class RegistrationActivity extends AppCompatActivity {
     TextView t11, t22;
     EditText name, email, pass, cpass;
     Button regBtn;
-    String URL_REGIST = "http://172.16.5.97/Auction/register.php";
+    String URL_REGIST = "https://determinate-soap.000webhostapp.com/register.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
    TextView t1,t2,t3;
    EditText email,password;
    Button b1;
-    String URL_LOGIN = "http://172.16.5.97/Auction/login.php";
+    String URL_LOGIN = "https://determinate-soap.000webhostapp.com/login.php";
 
 
     @Override
@@ -74,18 +74,17 @@ public class LoginActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(), BottomActivity.class);
-                startActivity(intent);
-//                String mEmail = email.getText().toString().trim();
-//                String mPass = password.getText().toString().trim();
-//                if (!mEmail.isEmpty() || !mPass.isEmpty() ){
-//                    Login(mEmail , mPass);
-//
-//
-//                }else{
-//                    email.setError("Please Insert Email");
-//                    password.setError("Please Inset Password");
-//                }
+
+                String mEmail = email.getText().toString().trim();
+                String mPass = password.getText().toString().trim();
+                if (!mEmail.isEmpty() || !mPass.isEmpty() ){
+                    Login(mEmail , mPass);
+
+
+                }else{
+                    email.setError("Please Insert Email");
+                    password.setError("Please Inset Password");
+                }
 
             }
 
