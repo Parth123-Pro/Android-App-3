@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@color/Black"
     android:orientation="vertical"
-
+    android:theme="@style/AppTheme"
 
     >
 
@@ -14,63 +14,39 @@
         android:id="@+id/textView2"
         android:layout_width="388dp"
         android:layout_height="59dp"
-        android:layout_marginTop="16dp"
-        android:drawableRight="@drawable/gravelll"
         android:drawableTint="@color/white"
 
 
         android:paddingLeft="22dp"
         android:paddingRight="15dp"
-        android:text="Auction Hub"
+        android:text="Fuel Injection"
 
         android:textColor="@color/white"
         android:textSize="36dp"
         android:textStyle="bold"
         app:fontFamily="@font/allura"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
     <androidx.recyclerview.widget.RecyclerView
 
-
+android:foregroundGravity="center"
         android:id="@+id/homerecycle1"
-        android:layout_width="373dp"
-        android:layout_height="592dp"
+        android:layout_width="345dp"
+        android:layout_height="560dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="5dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.25" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="323dp"
-
-        android:layout_marginLeft="323dp"
-
-        android:layout_marginBottom="48dp"
-        android:clickable="true"
-        app:backgroundTint="@color/Green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:srcCompat="@drawable/cameraadd"
-
-        android:tint="@color/Black"
-        android:foregroundTint="@color/Black"
-        />
-
-
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

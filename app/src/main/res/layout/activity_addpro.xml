@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddProduct.AddproActivity"
-    android:background="@color/Black">
+    tools:context=".AddProduct.AddproActivity">
+
+    <Button
+        android:id="@+id/addpro"
+        android:layout_width="312dp"
+        android:layout_height="65dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:text="Add "
+
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
 
     <TextView
         android:id="@+id/addtv1"
@@ -15,126 +40,165 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginLeft="78dp"
-        android:layout_marginTop="41dp"
         android:gravity="center|left"
-        android:text="ADD AUCTION"
-        android:textColor="#FFFFFF"
+        android:text="ReFuling"
+        android:textColor="@color/Black"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:fontFamily="@font/allura" />
+        app:fontFamily="@font/allura"
 
-    <EditText
-        android:id="@+id/addedt1"
-        android:layout_width="wrap_content"
-        android:layout_height="67dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="178dp"
-        android:backgroundTint="@color/white"
-       android:ems="12"
-        android:hint="Product Title"
-        android:inputType="textPersonName"
-        android:textColor="#FFFFFF"
-        android:textColorHint="@color/Gray"
-        android:textSize="18sp" />
-
-    <Button
-        android:id="@+id/addbtn"
-        android:layout_width="249dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-
-        android:layout_centerInParent="true"
-        android:layout_marginEnd="84dp"
-        android:layout_marginRight="84dp"
-        android:layout_marginBottom="127dp"
-        android:backgroundTint="@color/Green"
-        android:drawableLeft="@drawable/arrowblackopp"
-        android:gravity="center"
-        android:text="ADD" />
-
-    <Button
-        android:id="@+id/addimg1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="77dp"
-        android:layout_marginLeft="77dp"
-        android:layout_marginBottom="414dp"
-        android:background="@color/Green"
-        android:text="Image 1"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="88dp" />
+        app:layout_constraintVertical_bias="0.024" />
 
-    <Button
-        android:id="@+id/addimg2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="79dp"
-        android:layout_marginRight="79dp"
-        android:layout_marginBottom="413dp"
-        android:background="@color/Green"
-        android:text="Image 2"
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="180dp"
+        android:layout_height="63dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:textColor="@color/white"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="244dp" />
+        app:layout_constraintVertical_bias="0.203" />
 
     <EditText
-        android:id="@+id/addedt2"
-        android:layout_width="wrap_content"
-        android:layout_height="67dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="343dp"
-        android:backgroundTint="@color/white"
-       android:ems="12"
-        android:hint="Product Price"
-        android:inputType="textPersonName"
-        android:textColor="#FFFFFF"
-        android:textColorHint="@color/Gray"
-        android:textSize="18sp" />
+        android:id="@+id/time"
+        android:layout_width="111dp"
+        android:layout_height="61dp"
+        android:ems="10"
+        android:hint="TIme"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202" />
 
     <EditText
-        android:id="@+id/addedt3"
-        android:layout_width="wrap_content"
-        android:layout_height="67dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="439dp"
-        android:backgroundTint="@color/white"
-       android:ems="12"
-        android:hint="Product Detail"
-        android:inputType="textPersonName"
-        android:textColor="#FFFFFF"
-        android:textColorHint="@color/Gray"
-        android:textSize="18sp" />
+        android:id="@+id/odometer"
+        android:layout_width="326dp"
+        android:layout_height="82dp"
+        android:ems="10"
+        android:hint="Odometer (km)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.335" />
 
-    <TextView
-        android:id="@+id/addlink"
-        android:layout_width="117dp"
-        android:layout_height="53dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginLeft="78dp"
-        android:layout_marginBottom="59dp"
-        android:clickable="true"
-        android:drawableLeft="@drawable/arrowbackwhite"
-        android:drawableTint="@color/Gray"
-        android:gravity="center|right"
-        android:text="Signin"
-        android:textColor="@color/Gray"
-        android:textSize="18sp"  />
-</RelativeLayout>
+    <EditText
+        android:id="@+id/lastodometer"
+        android:layout_width="327dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="Last Odometer (km)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <Spinner
+        android:id="@+id/fuletype"
+
+        android:layout_width="329dp"
+        android:layout_height="46dp"
+
+        android:dropDownSelector="@android:drawable/btn_dropdown"
+
+        android:popupBackground="@color/lightGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <EditText
+        android:id="@+id/priceperl"
+        android:layout_width="77dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="Price/L"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.671" />
+
+    <EditText
+        android:id="@+id/totalcost1"
+        android:layout_width="93dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Total Cost"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
+
+    <EditText
+        android:id="@+id/average"
+        android:layout_width="84dp"
+        android:layout_height="59dp"
+        android:background="#949FAA"
+        android:clickable="false"
+        android:ems="10"
+        android:hint="Average"
+        android:inputType="numberDecimal"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:background="@color/lightGreen"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664"
+        app:srcCompat="@drawable/arrowwhite" />
+
+    <EditText
+        android:id="@+id/y_did"
+        android:layout_width="330dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Your Driver ID"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

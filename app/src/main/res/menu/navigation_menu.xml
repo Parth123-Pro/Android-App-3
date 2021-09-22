@@ -5,25 +5,19 @@
     <item
         android:id="@+id/navigation_home"
         android:enabled="true"
-        android:icon="@drawable/homewhite"
-        android:title="Home"
-        android:visible="true" />
+        android:icon="@drawable/recipt"
+        android:title="Recipt"
+        android:visible="true"
+        android:iconTint="@color/Black"/>
+
     <item
-        android:id="@+id/navigation_history"
-        android:enabled="true"
-        android:icon="@drawable/historywhite"
-        android:title="History"
-        android:visible="true" />
+        android:checkable="false"
+        android:title="" />
     <item
         android:id="@+id/navigation_chat"
         android:enabled="true"
         android:icon="@drawable/chatwhite"
-        android:title="Chat"
-        android:visible="true" />
-    <item
-        android:id="@+id/navigation_user"
-        android:enabled="true"
-        android:icon="@drawable/facewhite"
-        android:title="User"
-        android:visible="true" />
+        android:title="Profit Graph"
+        android:visible="true"
+        android:iconTint="@color/Black"/>
 </menu>

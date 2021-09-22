@@ -1,12 +1,9 @@
 package com.example.auctionhub;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -18,9 +15,9 @@ import java.util.List;
 public  class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
 
      Context mContext;
-      List<Auction> mData;
+      List<Fuel> mData;
 
-    public RecyclerViewAdapter(Context mContext, List<Auction> mData) {
+    public RecyclerViewAdapter(Context mContext, List<Fuel> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }
@@ -41,23 +38,14 @@ public  class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapt
     public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
 
 
-        holder.tv_title.setText(mData.get(position).getTitle());
-        holder.tv_price.setText(mData.get(position).getPrice());
-        holder.aucimg.setImageResource(mData.get(position).getThumbnail());
-        holder.cv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(mContext, MotocActivity.class);
-                intent.putExtra("Title",mData.get(position).getTitle());
-                intent.putExtra("Thumbnail",mData.get(position).getThumbnail());
-                intent.putExtra("Price",mData.get(position).getPrice());
-                intent.putExtra("Detail",mData.get(position).getDetail());
-               // intent.putExtra("Button",mData.get(position).getButton());
-            //    intent.putExtra("Button",mData.get(position).getButton());
-               // intent.putExtras();
-                mContext.startActivity(intent);
-            }
-        });
+        holder.DID.setText(mData.get(position).getDID());
+        holder.date.setText(mData.get(position).getDate());
+        holder.time.setText(mData.get(position).getTime());
+        holder.odometer.setText(mData.get(position).getOdometer());
+        holder.totalcost.setText(mData.get(position).getTotalcost());
+        holder.liter.setText(mData.get(position).getLiter());
+
+
 
 
     }
@@ -69,17 +57,23 @@ public  class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapt
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView tv_title,tv_price;
-        ImageView aucimg;
+        TextView DID,date,time,odometer,totalcost,liter;
+
         CardView cv;
 
         public MyViewHolder(View view){
             super(view);
 
-            tv_title=(TextView) view.findViewById(R.id.cvt1);
-            tv_price=(TextView) view.findViewById(R.id.cvt2);
-            aucimg=(ImageView)view.findViewById(R.id.cvimg1);
+            DID=(TextView) view.findViewById(R.id.DID);
+            date=(TextView) view.findViewById(R.id.date);
+            time=(TextView) view.findViewById(R.id.time);
+            odometer=(TextView) view.findViewById(R.id.odometer);
+            totalcost=(TextView) view.findViewById(R.id.totalcost);
+            liter=(TextView) view.findViewById(R.id.average);
+
+
             cv=(CardView)view.findViewById(R.id.card123);
+
 
         }
     }

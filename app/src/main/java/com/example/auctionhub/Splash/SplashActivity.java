@@ -1,15 +1,14 @@
 package com.example.auctionhub.Splash;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.widget.ImageView;
 
-import com.example.auctionhub.Login.LoginActivity;
-import com.example.auctionhub.MainActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.auctionhub.BottomActivity;
 import com.example.auctionhub.R;
+import com.example.auctionhub.Registration.RegistrationActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -23,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if (10>5) {
-                    Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, RegistrationActivity.class);
                     startActivity(intent);
                     finish();
                 }

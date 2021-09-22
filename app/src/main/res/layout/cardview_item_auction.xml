@@ -2,62 +2,95 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="165dp"
-    android:layout_height="260dp"
+    android:layout_height="195dp"
 
     android:layout_marginBottom="5dp"
     android:layout_marginTop="15dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="40dp"
-
-    >
+    app:cardCornerRadius="100dp"
+    android:paddingLeft="10dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card123"
         android:layout_width="match_parent"
-        android:layout_height="255dp"
+        android:layout_height="match_parent"
         android:clickable="true"
 
-        >
+        android:focusable="true">
 
         <LinearLayout
 
             android:layout_width="match_parent"
-            android:layout_height="255dp"
+            android:layout_height="match_parent"
 
             android:orientation="vertical">
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/cvimg1"
-                android:layout_width="match_parent"
-                android:layout_height="163dp"
-                android:background="@color/Black"
-                android:scaleType="centerCrop"></androidx.appcompat.widget.AppCompatImageView>
 
             <TextView
-                android:id="@+id/cvt1"
-
+                android:id="@+id/DID"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@color/Green"
-                android:gravity="center"
-                android:text="Auction Title"
-                android:textColor="@color/Black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:fontFamily="@font/abril_fatface"></TextView>
-
-            <TextView
-                android:id="@+id/cvt2"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:background="@color/white"
                 android:gravity="center"
-                android:text="Auction Price"
+                android:text="@string/did"
                 android:textColor="@color/Black"
-                android:textSize="18sp"
-                android:textStyle="bold"></TextView>
+                android:textSize="18sp" />
 
+            <TextView
+                android:id="@+id/date"
 
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/Text_color"
+                android:gravity="center"
+                android:text="@string/date"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                app:fontFamily="@font/abril_fatface" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textColor="@color/Black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/odometer"
+
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/Text_color"
+                android:gravity="center"
+                android:text="@string/odometer"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                app:fontFamily="@font/abril_fatface" />
+
+            <TextView
+                android:id="@+id/totalcost"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/totalcost"
+                android:textColor="@color/Black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/average"
+
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/Text_color"
+                android:gravity="center"
+                android:text="@string/liter"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                app:fontFamily="@font/abril_fatface" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
