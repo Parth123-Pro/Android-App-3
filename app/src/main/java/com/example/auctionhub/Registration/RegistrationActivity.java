@@ -33,6 +33,9 @@ public class RegistrationActivity extends AppCompatActivity {
         did = findViewById(R.id.d_did);
         regBtn=findViewById(R.id.btnreg);
         t22 = findViewById(R.id.linklog1);
+
+
+
         t22.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,6 +45,9 @@ public class RegistrationActivity extends AppCompatActivity {
         });
 
         mDatabaseHelper = new DatabaseHelper(this);
+
+
+
         regBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -51,7 +57,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 String licence1= license.getText().toString();
                 String did1= did.getText().toString();
 
-             /*   Boolean checkinsert=mDatabaseHelper.result();*/
+
 
 
             }

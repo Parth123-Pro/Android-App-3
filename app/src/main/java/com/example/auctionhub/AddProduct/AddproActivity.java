@@ -21,7 +21,7 @@ public class AddproActivity extends AppCompatActivity {
 
 
     EditText did, date, time;
-    Button addpro,addlit;
+    Button addpro,addlit,addbtn;
 
 
 
@@ -29,12 +29,13 @@ public class AddproActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addpro);
+
         did = (EditText) findViewById(R.id.y_did);
         date = (EditText) findViewById(R.id.date);
         time = (EditText) findViewById(R.id.time);
         addpro = (Button) findViewById(R.id.addpro);
         addlit = (Button) findViewById(R.id.btncalc);
-
+        addbtn = (Button) findViewById(R.id.addbtn);
 
 
 
@@ -59,9 +60,6 @@ public class AddproActivity extends AppCompatActivity {
                                       }
         });
 
-
-
-
                 addpro.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -81,6 +79,12 @@ public class AddproActivity extends AppCompatActivity {
 
                     }});
 
+                addbtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                    }
+                });
 
 }
 }
