@@ -69,7 +69,7 @@ public  class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapt
             time=(TextView) view.findViewById(R.id.time);
             odometer=(TextView) view.findViewById(R.id.odometer);
             totalcost=(TextView) view.findViewById(R.id.totalcost);
-            liter=(TextView) view.findViewById(R.id.average);
+            liter=(TextView) view.findViewById(R.id.totalliter);
 
 
             cv=(CardView)view.findViewById(R.id.card123);

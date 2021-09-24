@@ -5,10 +5,10 @@
     <item
         android:id="@+id/navigation_home"
         android:enabled="true"
-        android:icon="@drawable/recipt"
+        android:icon="@drawable/recept"
+        android:iconTint="@color/Black"
         android:title="Recipt"
-        android:visible="true"
-        android:iconTint="@color/Black"/>
+        android:visible="true" />
 
     <item
         android:checkable="false"
@@ -16,8 +16,8 @@
     <item
         android:id="@+id/navigation_chat"
         android:enabled="true"
-        android:icon="@drawable/chatwhite"
+        android:icon="@drawable/driver1"
+        android:iconTint="@color/Black"
         android:title="Profit Graph"
-        android:visible="true"
-        android:iconTint="@color/Black"/>
+        android:visible="true" />
 </menu>

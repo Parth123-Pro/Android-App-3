@@ -14,7 +14,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String TABLE_NAME = "Registration";
     private static final String COl1 ="ID";
     private static final String COl2 ="Name";
-    private static final String COl3 ="Email";
     private static final String COl4 ="Phone";
     private static final String COl5 ="License";
     private static final String COl6 ="DriverID";
@@ -27,7 +26,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-String createTable = "CREATE TABLE"+ TABLE_NAME + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,"+COl2+"TEXT,"+COl3+"TEXT,"+COl4+"INTEGER,"+COl5+"TEXT,"+COl6+"INTEGER)";
+String createTable = "CREATE TABLE"+ TABLE_NAME + "(ID INTEGER PRIMARY KEY AUTOINCREMENT,"+COl2+"TEXT,"+COl4+"INTEGER,"+COl5+"TEXT,"+COl6+"INTEGER)";
 sqLiteDatabase.execSQL(createTable);
 
     }
@@ -42,7 +41,7 @@ sqLiteDatabase.execSQL(createTable);
         SQLiteDatabase sqLiteDatabase=this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COl2,item);
-        contentValues.put(COl3,item);
+
         contentValues.put(COl4,item);
         contentValues.put(COl5,item);
         contentValues.put(COl6,item);
@@ -55,4 +54,5 @@ sqLiteDatabase.execSQL(createTable);
             return true;
         }
     }
+
 }

@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Green">
+    android:background="@color/white"
+   >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="388dp"
+        android:layout_height="59dp"
+        android:drawableTint="@color/Black"
+
+        android:gravity="center"
+        android:paddingLeft="22dp"
+        android:paddingRight="15dp"
+        android:text="Registred User"
+
+        android:textColor="@color/Black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/allura" />
 
 </RelativeLayout>

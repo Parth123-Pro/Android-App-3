@@ -4,25 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Black"
     android:orientation="vertical"
-    android:theme="@style/AppTheme"
-
+    android:background="@color/white"
     >
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="388dp"
         android:layout_height="59dp"
-        android:drawableTint="@color/white"
+        android:drawableTint="@color/Black"
 
-
+        android:gravity="center"
         android:paddingLeft="22dp"
         android:paddingRight="15dp"
         android:text="Fuel Injection"
 
-        android:textColor="@color/white"
-        android:textSize="36dp"
+        android:textColor="@color/Black"
+        android:textSize="30dp"
         android:textStyle="bold"
         app:fontFamily="@font/allura"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,16 +28,16 @@
         app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.001" />
 
     <androidx.recyclerview.widget.RecyclerView
 
-android:foregroundGravity="center"
         android:id="@+id/homerecycle1"
-        android:layout_width="345dp"
-        android:layout_height="560dp"
+        android:layout_width="337dp"
+        android:layout_height="604dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:foregroundGravity="center"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

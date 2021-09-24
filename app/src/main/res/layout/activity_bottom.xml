@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Gray"
+
+    android:background="@color/white"
     tools:context=".BottomActivity">
 
     <FrameLayout
@@ -20,18 +21,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="@color/lightGreen"
+        android:background="@color/Black"
+        app:backgroundTint="#d0f0c0"
         app:fabCradleMargin="10dp"
         app:fabCradleRoundedCornerRadius="30dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom1"
-
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
 
-            app:itemIconTint="@color/lightGreen"
+            app:itemIconTint="@color/Black"
 
             app:labelVisibilityMode="unlabeled"
             app:menu="@menu/navigation_menu" />
@@ -41,14 +43,15 @@
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/lightGreen"
+        android:backgroundTint="@color/white"
 
         android:clickable="true"
         android:contentDescription="TODO"
 
-        android:src="@drawable/add2"
 
-
+        android:src="@drawable/colorfff"
+        app:backgroundTint="#d0f0c0"
+        app:fabSize="auto"
         app:layout_anchor="@id/bottom_bar"
         app:maxImageSize="60dp" />
 

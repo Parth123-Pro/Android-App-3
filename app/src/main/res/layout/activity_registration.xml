@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="@color/white"
+
     tools:context=".Registration.RegistrationActivity">
 
 
@@ -19,7 +20,7 @@
         android:layout_centerInParent="true"
         android:layout_marginBottom="631dp"
         android:gravity="center"
-        android:text="Register Your Driver ID"
+        android:text="Register Yourself"
         android:textColor="@color/Black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -44,9 +45,9 @@
         android:layout_marginEnd="65dp"
         android:layout_marginRight="65dp"
         android:drawableLeft="@drawable/userlog"
-        android:drawableTint="@color/lightGreen"
+        android:drawableTint="#d0f0c0"
         android:ems="12"
-        android:hint="   Name"
+        android:hint="@string/name"
         android:inputType="textPersonName"
         android:padding="10dp"
         android:textColor="@color/Text_color"
@@ -73,10 +74,9 @@
         android:layout_marginLeft="65dp"
         android:layout_marginEnd="65dp"
         android:layout_marginRight="65dp"
-        android:drawableLeft="@drawable/userlog"
-        android:drawableTint="@color/lightGreen"
-        android:ems="12"
-        android:hint="   Create Driver ID"
+        android:drawableLeft="@drawable/driver2"
+        android:drawableTint="#d0f0c0"
+        android:hint="@string/create_driver_id"
         android:inputType="textPersonName"
         android:padding="10dp"
         android:textColor="@color/Text_color"
@@ -87,38 +87,7 @@
         app:layout_constraintHorizontal_bias="0.653"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.673" />
-
-    <EditText
-        android:id="@+id/d_email"
-        android:layout_width="255dp"
-        android:layout_height="67dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="65dp"
-        android:layout_marginLeft="65dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginRight="65dp"
-        android:drawableLeft="@android:drawable/sym_action_email"
-        android:drawableTint="@color/lightGreen"
-        android:ems="12"
-        android:foregroundGravity="center_vertical"
-        android:hint="   Email"
-        android:inputType="textEmailAddress"
-        android:padding="10dp"
-        android:textColor="@color/Text_color"
-        android:textColorHint="@color/Text_color"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.576"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.308" />
+        app:layout_constraintVertical_bias="0.568" />
 
     <EditText
         android:id="@+id/d_phone"
@@ -135,9 +104,9 @@
         android:layout_marginEnd="65dp"
         android:layout_marginRight="65dp"
         android:drawableLeft="@android:drawable/stat_sys_phone_call"
-        android:drawableTint="@color/lightGreen"
+        android:drawableTint="#d0f0c0"
         android:ems="12"
-        android:hint="   Mobile Number"
+        android:hint="@string/mobile_number"
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColor="@color/Text_color"
@@ -147,7 +116,7 @@
         app:layout_constraintHorizontal_bias="0.607"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432" />
+        app:layout_constraintVertical_bias="0.312" />
 
     <EditText
         android:id="@+id/d_licence"
@@ -163,10 +132,10 @@
         android:layout_marginLeft="65dp"
         android:layout_marginEnd="65dp"
         android:layout_marginRight="65dp"
-        android:drawableLeft="@drawable/ic_menu_gallery"
-        android:drawableTint="@color/lightGreen"
+        android:drawableLeft="@drawable/licence"
+        android:drawableTint="#d0f0c0"
         android:ems="12"
-        android:hint="Driving Licence Number"
+        android:hint="@string/driving_licence"
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColor="@color/Text_color"
@@ -176,7 +145,7 @@
         app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.554" />
+        app:layout_constraintVertical_bias="0.445" />
 
     <Button
         android:id="@+id/btnreg"
@@ -192,16 +161,17 @@
         android:layout_marginLeft="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
-        android:background="@drawable/btn"
+        android:background="#d0f0c0"
         android:gravity="center"
         android:text="Sign up"
-        android:textColor="@color/white"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
+        app:layout_constraintVertical_bias="0.715" />
 
     <TextView
         android:id="@+id/linklog1"
@@ -211,7 +181,6 @@
         android:layout_centerInParent="true"
         android:clickable="true"
         android:drawableLeft="@drawable/arrowblack"
-        android:drawableRight="@drawable/arrowblackopp"
         android:gravity="center"
         android:text="Already have Driver ID"
         android:textColor="@color/Black"

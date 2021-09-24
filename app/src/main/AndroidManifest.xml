@@ -10,13 +10,15 @@
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
-        android:icon="@drawable/logosmall"
+        android:icon="@drawable/colorfff"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/logosmall"
+        android:roundIcon="@drawable/colorfff"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
+
         <activity android:name=".AddProduct.AddproActivity" />
         <activity android:name=".BottomActivity" />
 

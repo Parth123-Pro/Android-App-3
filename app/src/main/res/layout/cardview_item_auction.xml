@@ -30,7 +30,7 @@
                 android:id="@+id/DID"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:background="@color/white"
+                android:background="@color/Text_color"
                 android:gravity="center"
                 android:text="@string/did"
                 android:textColor="@color/Black"
@@ -41,7 +41,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:background="@color/Text_color"
+                android:background="@color/colorPrimaryDark"
                 android:gravity="center"
                 android:text="@string/date"
                 android:textColor="@color/Black"
@@ -52,7 +52,7 @@
                 android:id="@+id/time"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:background="@color/white"
+                android:background="@color/Text_color"
                 android:gravity="center"
                 android:text="@string/time"
                 android:textColor="@color/Black"
@@ -63,7 +63,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:background="@color/Text_color"
+                android:background="@color/colorPrimaryDark"
                 android:gravity="center"
                 android:text="@string/odometer"
                 android:textColor="@color/Black"
@@ -74,18 +74,18 @@
                 android:id="@+id/totalcost"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:background="@color/white"
+                android:background="@color/Text_color"
                 android:gravity="center"
                 android:text="@string/totalcost"
                 android:textColor="@color/Black"
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/average"
+                android:id="@+id/totalliter"
 
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:background="@color/Text_color"
+                android:background="@color/colorPrimaryDark"
                 android:gravity="center"
                 android:text="@string/liter"
                 android:textColor="@color/Black"

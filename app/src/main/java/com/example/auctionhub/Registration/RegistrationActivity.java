@@ -15,7 +15,7 @@ import com.example.auctionhub.R;
 public class RegistrationActivity extends AppCompatActivity {
 
     TextView t11, t22;
-    EditText name, email, phone, license, did;
+    EditText name, phone, license, did;
     Button regBtn;
     DatabaseHelper mDatabaseHelper;
 
@@ -27,10 +27,11 @@ public class RegistrationActivity extends AppCompatActivity {
 
         t11 = findViewById(R.id.rt1);
         name = findViewById(R.id.d_name);
-        email = findViewById(R.id.d_email);
+
         phone = findViewById(R.id.d_phone);
         license = findViewById(R.id.d_licence);
         did = findViewById(R.id.d_did);
+        regBtn=findViewById(R.id.btnreg);
         t22 = findViewById(R.id.linklog1);
         t22.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,13 +42,25 @@ public class RegistrationActivity extends AppCompatActivity {
         });
 
         mDatabaseHelper = new DatabaseHelper(this);
+        regBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                String name1 = name.getText().toString();
+                String phone1 = phone.getText().toString();
+                String licence1= license.getText().toString();
+                String did1= did.getText().toString();
+
+             /*   Boolean checkinsert=mDatabaseHelper.result();*/
+
+
+            }
+        });
+
+
 
     }
 
-    public void AddData(String newEntry){
-        boolean insertData = mDatabaseHelper.addData(newEntry);
-
-    }
 
 
 }
