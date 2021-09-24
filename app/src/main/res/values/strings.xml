@@ -14,6 +14,7 @@
     <string name="mobile_number">Mobile Number</string>
     <string name="driving_licence">Driving Licence</string>
     <string name="create_driver_id">Create Driver ID</string>
+    <string name="phone" />
 
 
 </resources>

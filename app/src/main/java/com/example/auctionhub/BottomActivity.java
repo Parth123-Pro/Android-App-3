@@ -35,7 +35,7 @@ public class BottomActivity extends AppCompatActivity {
     }
 
 
-    private BottomNavigationView.OnNavigationItemSelectedListener onNavigationItemSelectedListener=new BottomNavigationView.OnNavigationItemSelectedListener() {
+    private final BottomNavigationView.OnNavigationItemSelectedListener onNavigationItemSelectedListener=new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
             Fragment fragment=null;
@@ -51,6 +51,7 @@ public class BottomActivity extends AppCompatActivity {
 
 
             }
+            assert fragment != null;
             getSupportFragmentManager().beginTransaction().replace(R.id.frame1,fragment).commit();
             return true;
 

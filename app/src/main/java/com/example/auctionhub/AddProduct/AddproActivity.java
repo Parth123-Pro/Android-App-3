@@ -13,15 +13,18 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.auctionhub.DBHelper;
 import com.example.auctionhub.R;
+import com.example.auctionhub.Registration.RegistrationActivity;
 
 import java.text.DecimalFormat;
 
 public class AddproActivity extends AppCompatActivity {
 
 
-    EditText did, date, time;
+    EditText did1, date, time;
     Button addpro,addlit,addbtn;
+    DBHelper DB;
 
 
 
@@ -30,13 +33,14 @@ public class AddproActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addpro);
 
-        did = (EditText) findViewById(R.id.y_did);
+        did1 = (EditText) findViewById(R.id.y_did);
         date = (EditText) findViewById(R.id.date);
         time = (EditText) findViewById(R.id.time);
         addpro = (Button) findViewById(R.id.addpro);
         addlit = (Button) findViewById(R.id.btncalc);
         addbtn = (Button) findViewById(R.id.addbtn);
 
+        DB = new DBHelper(this);
 
 
         addlit.setOnClickListener(new View.OnClickListener()
@@ -82,6 +86,25 @@ public class AddproActivity extends AppCompatActivity {
                 addbtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+/*
+                        String date1 = date.getText().toString();
+                        String time1 = time.getText().toString();
+                        String did11= did1.getText().toString();
+                        String codometer1= .getText().toString();
+                        String lodometer1= did.getText().toString();
+                        String price1= did.getText().toString();
+                        String totalPrice1= did.getText().toString();
+                        String liter1= did.getText().toString();
+                        String average1= did.getText().toString();
+
+                        Boolean checkinsertdata=DB.insertuserdata(name1,phone1,licence1,did1);
+                        if(checkinsertdata){
+                            Toast.makeText(AddproActivity.this,"New Entry Added",Toast.LENGTH_SHORT).show();
+                        }
+                        else{
+                            Toast.makeText(AddproActivity.this,"New Entry Not Added",Toast.LENGTH_SHORT).show();
+
+                        }*/
 
                     }
                 });
