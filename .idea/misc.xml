@@ -4,18 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout-v21/activity_bottom.xml" value="0.20729166666666668" />
-        <entry key="app/src/main/res/layout/activity_addpro.xml" value="0.4146341463414634" />
+        <entry key="app/src/main/res/layout/activity_addpro.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_bidnow.xml" value="0.10544904137235116" />
-        <entry key="app/src/main/res/layout/activity_bottom.xml" value="0.32974316487158245" />
+        <entry key="app/src/main/res/layout/activity_bottom.xml" value="0.11" />
         <entry key="app/src/main/res/layout/activity_edituser.xml" value="0.10544904137235116" />
         <entry key="app/src/main/res/layout/activity_forgotpassword.xml" value="0.10544904137235116" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.10544904137235116" />
         <entry key="app/src/main/res/layout/activity_logout.xml" value="0.10544904137235116" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.10544904137235116" />
         <entry key="app/src/main/res/layout/activity_motoc.xml" value="0.10544904137235116" />
-        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_resetpassword.xml" value="0.1301775147928994" />
-        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.11" />
         <entry key="app/src/main/res/layout/cardview_item_auction.xml" value="0.335" />
         <entry key="app/src/main/res/layout/cardview_item_driver.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.10544904137235116" />

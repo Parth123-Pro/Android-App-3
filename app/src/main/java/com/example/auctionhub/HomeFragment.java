@@ -55,8 +55,6 @@ public class HomeFragment extends Fragment  {
         fuel.add(new Fuel("52345","01/01/2021","12:00AM","1000KM","$1000","45.0L"));
         fuel.add(new Fuel("62345","01/01/2021","12:00AM","1000KM","$1000","45.0L"));
 
-
-
     }
 }
 
