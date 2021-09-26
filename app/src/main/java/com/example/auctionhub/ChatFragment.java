@@ -1,5 +1,6 @@
 package com.example.auctionhub;
 
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +20,7 @@ import java.util.List;
 public class ChatFragment extends Fragment {
 
     View v;
-    private List<Driver> driver;
+    ArrayList<Driver> dataholder;
 
     @Nullable
     @Override
@@ -28,11 +29,10 @@ public class ChatFragment extends Fragment {
         v= inflater.inflate(R.layout.fragment_chat,container,false);
 
         RecyclerView myrecyclerView = (RecyclerView) v.findViewById(R.id.drecyclerview);
+        myrecyclerView.setLayoutManager(new GridLayoutManager(getContext(),3));
 
-        DriverRecycler recyclerViewAdapter = new DriverRecycler(getContext(),driver);
-        myrecyclerView.setLayoutManager(new GridLayoutManager(getContext(),2));
-        myrecyclerView.setAdapter(recyclerViewAdapter);
-
+        DriverRecycler adapter=new DriverRecycler(dataholder);
+        myrecyclerView.setAdapter(adapter);
 
         return v;
 
@@ -42,14 +42,14 @@ public class ChatFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        driver = new ArrayList<>();
-        driver.add(new Driver("Parth","990909090","0000099888"));
-        driver.add(new Driver("Harsh","990909090","0000099888"));
-        driver.add(new Driver("Nandan","990909090","0000099888"));
-        driver.add(new Driver("Om","990909090","0000099888"));
-        driver.add(new Driver("Popat","990909090","0000099888"));
-        driver.add(new Driver("Jetha","990909090","0000099888"));
-        driver.add(new Driver("Mehta","990909090","0000099888"));
+
+        Cursor cursor=new DBHelper(getContext()).readallData();
+        while(cursor.moveToNext())
+        {
+            Driver obj=new Driver(cursor.getString(1),cursor.getString(2),cursor.getString(3),cursor.getString(4));
+            dataholder.add(obj);
+        }
+
 
 
 

@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 public class DBHelper extends SQLiteOpenHelper {
 
 
-    public DBHelper(Context context) {
+    public DBHelper(@Nullable Context context) {
         super(context, "Userdata.db", null, 1);
     }
 
@@ -58,10 +58,10 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
-    public Cursor getdata()
+    public Cursor readallData()
     {
         SQLiteDatabase DB=this.getWritableDatabase();
-        return DB.rawQuery("Select * from Userdetails", null);
+        return DB.rawQuery("Select * from Driverdetails", null);
 
     }
 }
