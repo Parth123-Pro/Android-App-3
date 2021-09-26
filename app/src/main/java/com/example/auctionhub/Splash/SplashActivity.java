@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import com.example.auctionhub.BottomActivity;
+import com.example.auctionhub.MainActivity;
 import com.example.auctionhub.R;
 import com.example.auctionhub.Registration.RegistrationActivity;
 
@@ -26,7 +27,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if (10>5) {
-                    Intent intent = new Intent(SplashActivity.this, RegistrationActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
                 }

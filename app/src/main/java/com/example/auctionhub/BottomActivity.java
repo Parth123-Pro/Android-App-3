@@ -50,6 +50,8 @@ public class BottomActivity extends AppCompatActivity {
                     break;
 
 
+                default:
+                    throw new IllegalStateException("Unexpected value: " + menuItem.getItemId());
             }
             assert fragment != null;
             getSupportFragmentManager().beginTransaction().replace(R.id.frame1,fragment).commit();

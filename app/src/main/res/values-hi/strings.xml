@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ईंधन इंजेक्शन</string>
+    <string name="title_activity_bottom">नीचे की गतिविधि</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="liter">लीटर</string>
+    <string name="totalcost">कुल लागत</string>
+    <string name="odometer">ओडोमीटर</string>
+    <string name="time">समय</string>
+    <string name="date">दिनांक</string>
+    <string name="did">चालक आईडी</string>
+    <string name="name">नाम</string>
+    <string name="mobile_number">मोबाइल नंबर</string>
+    <string name="driving_licence">ड्राइविंग लाइसेंस</string>
+    <string name="create_driver_id">ड्राइवर आईडी बनाएं</string>
+    <string name="phone" />
+    <string name="fuel_injection">ईंधन इंजेक्शन</string>
+    <string name="registred_user">दर्ज कराई ड्राइवर</string>
+    <string name="register_yourself">खुद को पंजीकृत करें</string>
+    <string name="sign_up">साइन अप करें</string>
+    <string name="already_have_driver_id">पहले से ड्राइवर आईडी है</string>
+    <string name="refuling">ईंधन भरने</string>
+    <string name="check_your_mileage">अपना माइलेज जांचें!</string>
+    <string name="receipt">रसीद</string>
+    <string name="next_page">अगला पृष्ठ</string>
+</resources>
