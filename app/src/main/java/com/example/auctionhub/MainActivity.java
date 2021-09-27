@@ -11,6 +11,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.auctionhub.Registration.RegistrationActivity;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         loadLocale();
         setContentView(R.layout.activity_main);
 
+        ImageView imageView = findViewById(R.id.imageView2);
         TextView textView = findViewById(R.id.next);
 
         textView.setOnClickListener(new View.OnClickListener() {

@@ -24,4 +24,13 @@
     <string name="check_your_mileage">अपना माइलेज जांचें!</string>
     <string name="receipt">रसीद</string>
     <string name="next_page">अगला पृष्ठ</string>
+    <string name="date1">दिनांक</string>
+    <string name="time1">समय</string>
+    <string name="your_driver_id1">आपका ड्राइवर आईडी</string>
+    <string name="current_odometer_km">वर्तमान ओडोमीटर (किमी)</string>
+    <string name="previous_odometer_km">पिछला ओडोमीटर (किमी)</string>
+    <string name="price_l">मूल्य/ली</string>
+    <string name="total_cost">कुल लागत</string>
+    <string name="total_liter">कुल लीटर</string>
+    <string name="mileage1">कार माइलेज</string>
 </resources>

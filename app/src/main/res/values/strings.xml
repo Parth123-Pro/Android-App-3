@@ -23,6 +23,15 @@
     <string name="check_your_mileage">Check Your Mileage!</string>
     <string name="receipt">RECEIPT</string>
     <string name="next_page">Next Page</string>
+    <string name="date1">Date</string>
+    <string name="time1">TIme</string>
+    <string name="your_driver_id1">Your Driver ID</string>
+    <string name="current_odometer_km">Current Odometer (km)</string>
+    <string name="previous_odometer_km">Previous Odometer (km)</string>
+    <string name="price_l">Price/L</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="total_liter">Total Liter</string>
+    <string name="mileage1">Mileage</string>
 
 
 </resources>
