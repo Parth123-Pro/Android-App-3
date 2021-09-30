@@ -10,7 +10,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.auctionhub.BottomActivity;
-import com.example.auctionhub.DBHelper;
+import com.example.auctionhub.ChatFragment;
+import com.example.auctionhub.DbHandler;
 import com.example.auctionhub.R;
 
 public class RegistrationActivity extends AppCompatActivity {
@@ -18,7 +19,8 @@ public class RegistrationActivity extends AppCompatActivity {
     TextView t11, t22;
     EditText name, phone, license, did;
     Button regBtn;
-    DBHelper DB;
+    DbHandler DB;
+    Intent intent;
 
 
     @Override
@@ -34,7 +36,7 @@ public class RegistrationActivity extends AppCompatActivity {
         did = findViewById(R.id.d_did);
         regBtn=findViewById(R.id.btnreg);
         t22 = findViewById(R.id.linklog1);
-        DB = new DBHelper(this);
+        DB = new DbHandler(this);
 
 
 
@@ -52,19 +54,13 @@ public class RegistrationActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                String name1 = name.getText().toString();
+                String name1 = name.getText().toString()+"\n";
                 String phone1 = phone.getText().toString();
-                String licence1= license.getText().toString();
-                String did1= did.getText().toString();
-
-                Boolean checkinsertdata=DB.insertuserdata(name1,phone1,licence1,did1);
-                if(checkinsertdata){
-                Toast.makeText(RegistrationActivity.this,"New Entry Added",Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Toast.makeText(RegistrationActivity.this,"New Entry Not Added",Toast.LENGTH_SHORT).show();
-
-                }
+                String licence1 = license.getText().toString();
+                String DId1 = did.getText().toString();
+                DbHandler dbHandler = new DbHandler(RegistrationActivity.this);
+                dbHandler.insertUserDetails(name1,phone1,licence1,DId1);
+                Toast.makeText(getApplicationContext(), "Details Inserted Successfully",Toast.LENGTH_SHORT).show();
 
 
 
