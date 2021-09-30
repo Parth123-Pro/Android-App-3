@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="388dp"
+        android:layout_height="59dp"
+        android:drawableTint="@color/Black"
+
+        android:gravity="center"
+        android:paddingLeft="22dp"
+        android:paddingRight="15dp"
+        android:text="Drivers"
+
+        android:textColor="@color/Black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        app:fontFamily="@font/allura"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
     <ListView
         android:id="@+id/user_list"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="689dp"
         android:dividerHeight="1dp" />
 </LinearLayout>
