@@ -15,15 +15,27 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
-        app:cardBackgroundColor="@color/white"
+        app:cardBackgroundColor="#ECFFDC"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
         app:cardMaxElevation="12dp"
         app:cardPreventCornerOverlap="true"
         app:cardUseCompatPadding="true">
 
+
+        <TextView
+            android:text="Date: "
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center|left"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/date"
+            android:paddingLeft="55dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top|center|left"
@@ -32,8 +44,21 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
+
+        <TextView
+            android:text="Time: "
+            android:paddingRight="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center|right"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/time"
+            android:paddingRight="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top|center|right"
@@ -44,19 +69,41 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/did1"
+          android:text="Driver ID: "
+            android:paddingLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="center|left"
             android:layout_marginTop="20dp"
-
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/did1"
+            android:paddingLeft="95dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:textSize="20sp"
             android:textStyle="bold" />
 
 
         <TextView
+          android:text="Liter: "
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center|left"
+            android:layout_marginTop="20dp"
+
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
             android:id="@+id/liter"
+            android:paddingLeft="55dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center|left"
@@ -66,10 +113,20 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-
         <TextView
+           android:text="Average km/l: "
+            android:paddingRight="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center|right"
+            android:layout_marginTop="20dp"
 
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
             android:id="@+id/average"
+            android:paddingRight="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center|right"
