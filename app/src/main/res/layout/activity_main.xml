@@ -30,20 +30,19 @@
 
     <Button
         android:id="@+id/langauge_b"
-        android:layout_width="221dp"
-        android:layout_height="83dp"
+        android:layout_width="281dp"
+        android:layout_height="68dp"
         android:layout_marginStart="151dp"
         android:layout_marginLeft="151dp"
         android:layout_marginTop="345dp"
         android:layout_marginEnd="172dp"
         android:layout_marginRight="172dp"
         android:layout_marginBottom="453dp"
-        android:background="#D5F2C6"
+        android:background="@drawable/btn"
         android:drawableLeft="@drawable/lang"
         android:gravity="center"
         android:text="Choose Your Langauge"
-
-
+        android:paddingLeft="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -7,8 +7,8 @@
    >
 
     <androidx.cardview.widget.CardView
-        android:layout_width="381dp"
-        android:layout_height="215dp"
+        android:layout_width="387dp"
+        android:layout_height="191dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
@@ -23,11 +23,10 @@
         app:cardUseCompatPadding="true">
 
         <TextView
-
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="top|center"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:textSize="20sp"
@@ -37,7 +36,7 @@
             android:id="@+id/phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
 
             android:layout_marginBottom="20dp"
@@ -49,7 +48,7 @@
             android:id="@+id/licence"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="bottom|center"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:textSize="20sp"

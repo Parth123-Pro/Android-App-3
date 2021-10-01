@@ -18,8 +18,8 @@
 
         android:textColor="@color/Black"
         android:textSize="30dp"
-        android:textStyle="bold"
 
+        android:textStyle="bold"
         app:fontFamily="@font/allura"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
