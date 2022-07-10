@@ -1,4 +1,4 @@
-# AuctionHub
+# BTC (GET BTC PRICE)
 import requests
 import time
 import datetime
